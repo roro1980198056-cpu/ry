@@ -3,8 +3,17 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen">
+      {/* Top Guarantee Banner */}
+      <div className="bg-[#0E99A0] text-white py-3 px-4 text-center">
+        <p className="text-sm md:text-base font-semibold flex items-center justify-center gap-2">
+          <span className="text-xl">🛡️</span>
+          180-TAGE GELD-ZURÜCK-GARANTIE - Kein Risiko, nur strahlende Haut!
+          <span className="text-xl">🛡️</span>
+        </p>
+      </div>
+
       {/* Top Security Bar */}
-      <div className="bg-white py-2 px-4 flex items-center justify-start border-b">
+      <div className="bg-white py-2 px-4 flex items-center justify-center gap-6 border-b">
         <div className="flex items-center gap-2">
           <Image
             src="https://ext.same-assets.com/778971269/3830594768.svg"
@@ -12,18 +21,41 @@ export default function Home() {
             width={24}
             height={24}
           />
-          <span className="text-sm font-medium text-gray-600">Secure Order</span>
+          <span className="text-sm font-medium text-gray-600">Sichere Bestellung</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-lg">🛡️</span>
+          <span className="text-sm font-medium text-[#0E99A0]">180 Tage Garantie</span>
         </div>
       </div>
 
       {/* Hero Section */}
       <section className="py-8 px-4 md:px-8 max-w-4xl mx-auto">
-        <h1 className="text-xl md:text-2xl lg:text-3xl text-center leading-relaxed mb-8">
+        <h1 className="text-xl md:text-2xl lg:text-3xl text-center leading-relaxed mb-4">
           BREAKING NEWS!: How You Can{" "}
           <span className="text-[#E8847C]">Say Goodbye to Your Skin Problems</span>: The{" "}
           <strong>FDA Cleared</strong>, <strong>100% Natural</strong>, 10-Minute{" "}
           <span className="underline text-[#E8847C]">Revolutionary Skincare</span> Routine Everyone&apos;s Talking About!
         </h1>
+
+        {/* Guarantee Hero Badge */}
+        <div className="bg-gradient-to-r from-[#0E99A0] to-[#0A7A80] text-white rounded-xl p-6 mb-8 text-center shadow-lg">
+          <div className="flex items-center justify-center gap-4 mb-3">
+            <Image
+              src="https://ext.same-assets.com/778971269/714983124.png"
+              alt="180 Day Guarantee"
+              width={80}
+              height={80}
+            />
+            <div className="text-left">
+              <p className="text-2xl md:text-3xl font-bold">180 TAGE</p>
+              <p className="text-lg md:text-xl">GELD-ZURÜCK-GARANTIE</p>
+            </div>
+          </div>
+          <p className="text-sm opacity-90">
+            Testen Sie risikofrei! Nicht zufrieden? Volle Rückerstattung - keine Fragen!
+          </p>
+        </div>
 
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="md:w-1/2 text-sm md:text-base leading-relaxed">
@@ -36,9 +68,13 @@ export default function Home() {
             <p className="mb-4">
               From Kim Kardashian to Victoria Beckham and Julia Roberts, Hollywood&apos;s most radiant faces are all pampering their skin with LED light therapy. This anti-aging essential has become the <strong>go-to choice of celebs, promising effortless rejuvenation and youthful-looking skin.</strong>
             </p>
-            <p className="mb-4">
-              No more heavy, awkward masks that feel like a workout to wear. Our mask is lightweight with an adjustable head strap – you might even forget you&apos;re wearing it!
-            </p>
+
+            {/* Inline Guarantee */}
+            <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4 my-4">
+              <p className="text-sm font-semibold text-center">
+                🛡️ Geschützt durch unsere <span className="text-[#0E99A0]">180-Tage Geld-zurück-Garantie</span> - Null Risiko!
+              </p>
+            </div>
           </div>
 
           <div className="md:w-1/2">
@@ -59,6 +95,58 @@ export default function Home() {
           <p className="mb-4">
             But here&apos;s the real kicker – it actually works. We&apos;re talking real, visible results. Your skin will glow, look healthier, and feel rejuvenated. No more empty promises. With our Light Therapy Facial-X7 Mask, you get a skincare product that delivers.
           </p>
+        </div>
+      </section>
+
+      {/* Big Guarantee Section - Early */}
+      <section className="py-12 px-4 md:px-8 bg-gradient-to-b from-[#E8F7F7] to-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6">
+            <span className="text-[#0E99A0]">180 TAGE</span> GELD-ZURÜCK-GARANTIE
+          </h2>
+          <p className="text-lg md:text-xl mb-6 text-gray-700">
+            Wir sind SO überzeugt von unserem Produkt, dass wir Ihnen <strong>volle 6 Monate</strong> Zeit geben, es zu testen!
+          </p>
+
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <Image
+              src="https://ext.same-assets.com/778971269/714983124.png"
+              alt="180 Day Money Back Guarantee"
+              width={200}
+              height={200}
+              className="drop-shadow-lg"
+            />
+            <div className="text-left max-w-md">
+              <ul className="space-y-3 text-sm md:text-base">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 text-xl">✓</span>
+                  <span><strong>Kein Risiko:</strong> Testen Sie 180 Tage lang völlig risikofrei</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 text-xl">✓</span>
+                  <span><strong>Keine Fragen:</strong> Nicht zufrieden? Geld zurück - so einfach!</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 text-xl">✓</span>
+                  <span><strong>Volle Erstattung:</strong> 100% Ihres Geldes zurück, garantiert</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 text-xl">✓</span>
+                  <span><strong>98% Zufriedenheit:</strong> Fast alle Kunden lieben es!</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a
+            href="https://www.digistore24.com/product/558312?aff=exxd00"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-teal text-lg mt-8 inline-block"
+          >
+            Jetzt Risikofrei Bestellen
+          </a>
+          <p className="text-sm text-gray-500 mt-2">🛡️ Geschützt durch 180-Tage Garantie</p>
         </div>
       </section>
 
@@ -103,6 +191,11 @@ export default function Home() {
                 <li><strong className="text-cyan-600">Cyan light</strong> = Enhances cell energy.</li>
                 <li><strong className="text-pink-600">Laser light</strong> = Penetrates deep to improve overall skin health.</li>
               </ul>
+
+              {/* Guarantee reminder */}
+              <div className="mt-6 p-3 bg-[#0E99A0] text-white rounded-lg text-center text-sm">
+                🛡️ 180 Tage testen - Nicht zufrieden? Geld zurück!
+              </div>
             </div>
           </div>
         </div>
@@ -111,7 +204,30 @@ export default function Home() {
       {/* Feature Cards */}
       <section className="py-12 px-4 md:px-8 bg-gray-50">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Card 1 - Gentle and Safe */}
+          {/* Card 1 - 180 Day Guarantee - NOW FIRST */}
+          <div className="bg-gradient-to-br from-[#0E99A0] to-[#0A7A80] rounded-xl p-6 shadow-lg text-center text-white md:col-span-2">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              <Image
+                src="https://ext.same-assets.com/778971269/714983124.png"
+                alt="180 Day Guarantee"
+                width={120}
+                height={120}
+              />
+              <div className="text-left">
+                <h3 className="text-2xl font-bold mb-2">180-Tage Geld-Zurück-Garantie</h3>
+                <p className="text-sm opacity-90 mb-3">
+                  Wir vertrauen unserem Produkt zu 100%. Deshalb geben wir Ihnen volle 6 Monate, um es zu testen. Nicht zufrieden? Volle Rückerstattung, keine Fragen gestellt!
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <span className="bg-white/20 px-3 py-1 rounded-full text-xs">Kein Risiko</span>
+                  <span className="bg-white/20 px-3 py-1 rounded-full text-xs">Volle Erstattung</span>
+                  <span className="bg-white/20 px-3 py-1 rounded-full text-xs">Keine Fragen</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2 - Gentle and Safe */}
           <div className="bg-white rounded-xl p-6 shadow-sm border text-center">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
               <Image
@@ -127,7 +243,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Card 2 - See Real Results */}
+          {/* Card 3 - See Real Results */}
           <div className="bg-white rounded-xl p-6 shadow-sm border text-center">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
               <Image
@@ -143,7 +259,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Card 3 - FDA-Cleared */}
+          {/* Card 4 - FDA-Cleared */}
           <div className="bg-white rounded-xl p-6 shadow-sm border text-center">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
               <Image
@@ -159,7 +275,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Card 4 - Self-Care */}
+          {/* Card 5 - Self-Care */}
           <div className="bg-white rounded-xl p-6 shadow-sm border text-center">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
               <Image
@@ -218,16 +334,10 @@ export default function Home() {
                   height={300}
                   className="w-full rounded-lg"
                 />
+                <p className="text-center text-xs text-gray-500 mt-2">🛡️ 180 Tage Garantie - Testen Sie risikofrei!</p>
               </div>
             </div>
           </div>
-
-          <p className="text-sm mt-6 text-gray-600">
-            According to studies published by the American Academy of Dermatology, light therapy promotes tissue repair and regeneration by naturally stimulating collagen production, proving its effectiveness in anti-aging and skin rejuvenation treatments.
-          </p>
-          <p className="text-sm mt-4 text-gray-600">
-            With over 4000 basic science research and clinical studies supporting its benefits, red light therapy is now recognized as a first-line treatment option for conditions like acute neck or back pain, tendinitis, and even skin conditions like eczema and psoriasis.
-          </p>
         </div>
       </section>
 
@@ -256,250 +366,16 @@ export default function Home() {
               />
             </div>
 
-            <div className="flex justify-center gap-2 mt-4">
-              <span className="w-2 h-2 rounded-full bg-gray-300" />
-              <span className="w-2 h-2 rounded-full bg-[#0E99A0]" />
-              <span className="w-2 h-2 rounded-full bg-gray-300" />
-              <span className="w-2 h-2 rounded-full bg-gray-300" />
-            </div>
-
             <div className="text-center mt-6">
-              <a href="https://www.digistore24.com/product/558312?aff=exxd00" target="_blank" rel="noopener noreferrer" className="btn-teal">Buy Now</a>
+              <a href="https://www.digistore24.com/product/558312?aff=exxd00" target="_blank" rel="noopener noreferrer" className="btn-teal">Jetzt Risikofrei Bestellen</a>
+              <p className="text-sm text-gray-500 mt-2">🛡️ 180 Tage Geld-zurück-Garantie</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Backed by Science */}
-      <section className="py-12 px-4 md:px-8 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl text-center mb-6">Backed by Science</h2>
-
-          <Image
-            src="https://ext.same-assets.com/778971269/936051421.jpeg"
-            alt="Backed by Science"
-            width={600}
-            height={400}
-            className="w-full max-w-xl mx-auto rounded-lg mb-6"
-          />
-
-          <p className="text-sm text-center max-w-2xl mx-auto mb-4">
-            The Light Therapy Facial-X7 Mask isn&apos;t just hype – it&apos;s backed by science. Light therapy has been proven to boost collagen production, reduce inflammation, and improve overall skin health.
-          </p>
-          <p className="text-sm text-center max-w-2xl mx-auto">
-            While most masks in the market only offer 1 to two light options, we offer 7 light colors - which target specific skin concerns, providing a comprehensive skincare solution that delivers real, visible results.
-          </p>
-        </div>
-      </section>
-
-      {/* Manufacturing Section */}
-      <section className="py-12 px-4 md:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-1/2">
-              <h3 className="text-xl font-semibold mb-4">Manufactured with Care</h3>
-              <p className="text-sm mb-4">
-                The Light Therapy Facial-X7 Mask is made in a certified factory that meets all FDA guidelines (FDA-cleared). This means you can trust the quality and safety of our product. We ensure that every mask is crafted to the highest standards.
-              </p>
-
-              <h3 className="text-xl font-semibold mb-4">Tried and Tested</h3>
-              <p className="text-sm">
-                Thousands of satisfied customers and A-list celebrities can&apos;t be wrong. Join the growing number of people who have transformed their skin with Red Light Therapy. See the difference for yourself and get ready to glow!
-              </p>
-            </div>
-
-            <div className="md:w-1/2">
-              <div className="bg-[#0E99A0] text-white rounded-xl p-6">
-                <h4 className="font-bold text-lg mb-4">Powerful, Comfortable<br />Safe and Effective</h4>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg">✓</span>
-                    <span className="text-sm">Premium Food-Grade Silicone</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg">✓</span>
-                    <span className="text-sm">Unmatched Comfort</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg">✓</span>
-                    <span className="text-sm">Skin-friendly and Soft</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg">✓</span>
-                    <span className="text-sm">3 in 1 Spa-Grade LEDs</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Hidden Dangers Section */}
-      <section className="py-12 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl text-center mb-8">The Hidden Dangers of Most LED Face Masks</h2>
-
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-1/2">
-              <Image
-                src="https://ext.same-assets.com/778971269/426605658.jpeg"
-                alt="UV light danger"
-                width={400}
-                height={500}
-                className="rounded-lg"
-              />
-            </div>
-
-            <div className="md:w-1/2 text-sm">
-              <p className="mb-4">
-                Many face masks are made with cheap materials and overhyped promises that don&apos;t deliver.
-              </p>
-              <p className="mb-4">
-                <strong>Here&apos;s the ugly truth:</strong> many of these masks do more harm than good. They might be heavy, uncomfortable, and require you to lie still for ages. Plus, <strong>some even generate high heat or UV rays,</strong> which can damage your skin in the long run.
-              </p>
-              <p className="mb-4">
-                And those complicated instructions? They make it seem like you need a degree just to figure out how to use the product. All this while the big companies keep pushing products that are more about flashy marketing than real results.
-              </p>
-              <p>
-                They&apos;re banking on you not noticing the difference—or not caring enough to switch.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="section-light py-12 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl text-center mb-6">Invest in Your Skin&apos;s Future</h2>
-          <p className="text-sm text-center mb-8 max-w-2xl mx-auto">
-            The Light Therapy Facial-X7 Mask offers more benefits in the long run. It&apos;s designed to last, meaning you won&apos;t need to keep buying new products. Plus, the time and money you save on dermatologist treatments or trying out multiple skincare products add up.
-          </p>
-
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-1/2 text-sm">
-              <h3 className="font-semibold text-lg mb-3">Can a Mask Really Make a Difference?</h3>
-              <p className="mb-4">
-                You might wonder if a light therapy mask can truly transform your skin. The answer is a big YES! Our mask&apos;s 7 different light therapies target specific skin issues, from boosting collagen to reducing redness. It&apos;s like having a personal spa treatment at home.
-              </p>
-
-              <h3 className="font-semibold text-lg mb-3">Isn&apos;t It Time to Put Your Skin First?</h3>
-              <p className="mb-4">
-                Putting off trying the Red Light Face Mask means continuing with your same old routine and not seeing the results you want. Don&apos;t let doubts hold you back from glowing, radiant skin.
-              </p>
-
-              <h3 className="font-semibold text-lg mb-3">Safe for Everyone</h3>
-              <p>
-                The Light Therapy Facial-X7 Mask is designed to be gentle and non-invasive, making it safe for all skin types. You can trust that it&apos;s free from harmful UV rays and high heat.
-              </p>
-            </div>
-
-            <div className="md:w-1/2">
-              <Image
-                src="https://ext.same-assets.com/778971269/3378934204.png"
-                alt="309 Light Beads"
-                width={400}
-                height={500}
-                className="w-full"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How Light Colors Work */}
-      <section className="py-12 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-1/2">
-              <Image
-                src="https://ext.same-assets.com/778971269/2146089626.jpeg"
-                alt="Woman relaxing"
-                width={400}
-                height={500}
-                className="rounded-lg"
-              />
-            </div>
-
-            <div className="md:w-1/2">
-              <h3 className="text-xl font-semibold mb-4">Boosts Serotonin</h3>
-              <p className="text-sm mb-4">
-                Light therapy has been shown to promote the production of serotonin, often called the &quot;feel-good&quot; hormone. This can enhance your mood and overall mental well-being.
-              </p>
-
-              <h3 className="text-xl font-semibold mb-4">Regulates Sleep Cycles</h3>
-              <p className="text-sm mb-4">
-                The increased exposure to light positively impacts your circadian rhythms, helping regulate sleep-wake cycles. This means you&apos;ll enjoy more restful sleep.
-              </p>
-
-              <h3 className="text-xl font-semibold mb-4">Prioritize Self-Care</h3>
-              <p className="text-sm">
-                Our mask is designed for convenience and effectiveness, empowering you to proactively prioritize self-care. It fits seamlessly into your daily routine.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How Light Colors Work Detail */}
-      <section className="py-12 px-4 md:px-8 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl text-center mb-8">How the Light Colors Work</h2>
-
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-1/2">
-              <ul className="check-list text-sm space-y-3">
-                <li><strong className="text-red-600">Red light:</strong> Boosts collagen production for firmer, younger-looking skin.</li>
-                <li><strong className="text-blue-600">Blue light:</strong> Fights acne and soothes irritation.</li>
-                <li><strong className="text-green-600">Green light:</strong> Balances skin tone and reduces redness.</li>
-                <li><strong className="text-yellow-500">Yellow light:</strong> Energizes your skin cells.</li>
-                <li><strong className="text-purple-600">Purple light:</strong> Combines red and blue light benefits for the ultimate skin rejuvenation.</li>
-                <li><strong className="text-cyan-500">Cyan light:</strong> Enhances cell energy.</li>
-                <li><strong className="text-pink-500">Laser light:</strong> Penetrates deep to improve overall skin health.</li>
-              </ul>
-            </div>
-
-            <div className="md:w-1/2">
-              <Image
-                src="https://ext.same-assets.com/778971269/2537731806.png"
-                alt="7 Proven Wavelengths"
-                width={400}
-                height={400}
-                className="w-full"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Easy to Use Video Section */}
-      <section className="py-12 px-4 md:px-8">
-        <div className="max-w-4xl mx-auto">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full rounded-lg mb-6"
-          >
-            <source src="https://ext.same-assets.com/778971269/2912124214.mp4" type="video/mp4" />
-          </video>
-
-          <div className="bg-gray-50 rounded-xl p-6 text-center">
-            <h3 className="text-xl font-semibold mb-4">Easy to Use</h3>
-            <p className="text-sm mb-4">
-              Just put on the mask, select your preferred light color, and let it work its magic. It&apos;s that simple! You can use it while watching TV, cooking, or even working on your laptop.
-            </p>
-            <p className="text-sm">
-              Start your light therapy journey today and see the amazing benefits for yourself. With the Light Therapy Facial-X7 Mask, healthier, glowing skin is just a few sessions away!
-            </p>
           </div>
         </div>
       </section>
 
       {/* Product Purchase Section */}
-      <section id="buy" className="py-12 px-4 md:px-8">
+      <section id="buy" className="py-12 px-4 md:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/2">
@@ -544,6 +420,20 @@ export default function Home() {
             </div>
 
             <div className="md:w-1/2">
+              {/* Guarantee Badge at top */}
+              <div className="bg-gradient-to-r from-[#0E99A0] to-[#0A7A80] text-white rounded-lg p-4 mb-4 flex items-center gap-3">
+                <Image
+                  src="https://ext.same-assets.com/778971269/714983124.png"
+                  alt="Guarantee"
+                  width={60}
+                  height={60}
+                />
+                <div>
+                  <p className="font-bold">180-TAGE GARANTIE</p>
+                  <p className="text-xs opacity-90">Nicht zufrieden? Geld zurück!</p>
+                </div>
+              </div>
+
               <p className="text-sm italic text-gray-600 mb-4">
                 &quot;I was skeptical at first, but after just a few weeks of using the mask, my skin is clearer, firmer, and more radiant. It&apos;s like a spa treatment at home!&quot; - EMILY T.
               </p>
@@ -551,6 +441,7 @@ export default function Home() {
               <div className="flex items-center gap-4 mb-4">
                 <span className="text-3xl font-bold text-[#0E99A0]">$297.87</span>
                 <span className="text-xl text-red-500 line-through">$800.00</span>
+                <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">-63%</span>
               </div>
 
               <div className="mb-6">
@@ -567,19 +458,24 @@ export default function Home() {
                 </div>
               </div>
 
-              <a href="https://www.digistore24.com/product/558312?aff=exxd00" target="_blank" rel="noopener noreferrer" className="btn-teal w-full block text-center mb-3">Buy Now</a>
-              <p className="text-center text-sm text-gray-500">Secure Transaction</p>
+              <a href="https://www.digistore24.com/product/558312?aff=exxd00" target="_blank" rel="noopener noreferrer" className="btn-teal w-full block text-center mb-2 text-lg">
+                Jetzt Risikofrei Bestellen
+              </a>
+              <p className="text-center text-sm text-[#0E99A0] font-semibold mb-4">🛡️ 180 Tage Geld-zurück-Garantie</p>
 
-              <div className="mt-6 flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                <Image
-                  src="https://ext.same-assets.com/778971269/214278951.png"
-                  alt="Money Back Guarantee"
-                  width={40}
-                  height={40}
-                />
-                <div>
-                  <p className="font-bold text-sm">180 DAY MONEY BACK GUARANTEE</p>
-                  <p className="text-xs text-gray-500">4 interest-free installments, or from $18.00/mo</p>
+              <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4">
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="https://ext.same-assets.com/778971269/714983124.png"
+                    alt="Money Back Guarantee"
+                    width={50}
+                    height={50}
+                  />
+                  <div>
+                    <p className="font-bold text-sm">180 TAGE GELD-ZURÜCK-GARANTIE</p>
+                    <p className="text-xs text-gray-600">Testen Sie risikofrei! Nicht zufrieden = Geld zurück!</p>
+                    <p className="text-xs text-gray-500 mt-1">4 zinsfreie Raten möglich, ab $18.00/Monat</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -587,63 +483,100 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Money Back Guarantee Section */}
-      <section className="py-12 px-4 md:px-8 bg-gray-50">
+      {/* MAIN Money Back Guarantee Section - Expanded */}
+      <section className="py-16 px-4 md:px-8 bg-gradient-to-b from-[#0E99A0] to-[#0A7A80] text-white">
         <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-1/2">
-              <h2 className="text-xl font-semibold mb-4">Any Reason Refund Guarantee</h2>
-              <p className="text-sm mb-4">
-                <strong>98%</strong> of our customers LOVE our products, but just in case...you can rest assured that you&apos;re making a risk-free purchase with our Any Reason Refund Guarantee.
-              </p>
-              <p className="text-sm mb-4">
-                In the highly unlikely event that you&apos;re not completely happy with your purchase, just let us know within <strong>180 days</strong> and we&apos;ll refund your money for any reason... It&apos;s that simple.
-              </p>
-              <p className="text-sm">
-                So go ahead and give our products a try today!
-              </p>
-            </div>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              180 TAGE GELD-ZURÜCK-GARANTIE
+            </h2>
+            <p className="text-xl opacity-90">
+              Ihr Kauf ist zu 100% geschützt. Kein Risiko, nur strahlende Haut!
+            </p>
+          </div>
 
+          <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2 flex justify-center">
               <Image
                 src="https://ext.same-assets.com/778971269/714983124.png"
                 alt="180 Day Money Back Guarantee"
-                width={300}
-                height={300}
+                width={280}
+                height={280}
+                className="drop-shadow-2xl"
               />
+            </div>
+
+            <div className="md:w-1/2">
+              <h3 className="text-2xl font-bold mb-4">Unsere Zufriedenheitsgarantie</h3>
+              <p className="mb-4">
+                <strong>98%</strong> unserer Kunden LIEBEN unsere Produkte. Aber für den Fall, dass Sie zu den 2% gehören, die nicht vollständig zufrieden sind...
+              </p>
+              <p className="mb-4">
+                Lassen Sie es uns einfach innerhalb von <strong>180 Tagen</strong> wissen, und wir erstatten Ihnen <strong>100% Ihres Geldes zurück</strong> - ohne Fragen!
+              </p>
+
+              <div className="bg-white/20 rounded-lg p-4 mb-6">
+                <h4 className="font-bold mb-2">Das bedeutet für Sie:</h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex items-center gap-2">
+                    <span className="text-yellow-300">★</span>
+                    6 volle Monate Zeit zum Testen
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-yellow-300">★</span>
+                    Volle Rückerstattung bei Unzufriedenheit
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-yellow-300">★</span>
+                    Keine komplizierten Rückgabebedingungen
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-yellow-300">★</span>
+                    Freundlicher Kundenservice
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="https://www.digistore24.com/product/558312?aff=exxd00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#0E99A0] px-8 py-4 rounded-lg font-bold text-lg inline-block hover:bg-gray-100 transition-colors"
+              >
+                Jetzt Risikofrei Bestellen
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What's in the Box */}
+      {/* Why 180 Days Section */}
       <section className="py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl text-center mb-8">What&apos;s to Lose by Sticking with Regular Face Masks?</h2>
+          <h2 className="text-2xl md:text-3xl text-center mb-8">Warum 180 Tage Garantie?</h2>
 
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-1/2">
-              <Image
-                src="https://ext.same-assets.com/778971269/1755601310.jpeg"
-                alt="What's in the Box"
-                width={400}
-                height={400}
-                className="w-full rounded-lg"
-              />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">🔬</div>
+              <h3 className="font-bold mb-2">Wissenschaftlich bewiesen</h3>
+              <p className="text-sm text-gray-600">
+                Studien zeigen, dass sichtbare Ergebnisse nach 6-8 Wochen eintreten. Wir geben Ihnen 180 Tage!
+              </p>
             </div>
 
-            <div className="md:w-1/2 text-sm">
-              <p className="mb-4">
-                So, you decide to stick with the usual face masks. What&apos;s the big deal? Well, for starters, you keep dealing with <strong>uncomfortable, bulky masks</strong> that don&apos;t fit well and feel like a chore to wear. Plus, you&apos;re probably not seeing the results you want.
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">💪</div>
+              <h3 className="font-bold mb-2">Wir vertrauen unserem Produkt</h3>
+              <p className="text-sm text-gray-600">
+                Wir sind so überzeugt von der Qualität, dass wir dieses Risiko gerne eingehen.
               </p>
-              <p className="mb-4">
-                And you know that nagging doubt about whether those masks are actually doing anything for your skin? That sticks around too.
-              </p>
-              <p className="mb-4">
-                Skipping out on our Red Light Face Mask means missing out on a bunch of amazing benefits. Imagine a mask that&apos;s comfortable, easy to use, and actually works. Picture yourself with healthier, glowing skin thanks to the power of light therapy that targets specific skin issues.
-              </p>
-              <p>
-                It&apos;s like choosing between sticking with the same old boring skincare routine or trying out something that makes a real difference. Make the smart choice and experience the glow. You have nothing to lose except dull, tired skin!
+            </div>
+
+            <div className="text-center p-6 bg-gray-50 rounded-xl">
+              <div className="text-4xl mb-4">❤️</div>
+              <h3 className="font-bold mb-2">Ihre Zufriedenheit zählt</h3>
+              <p className="text-sm text-gray-600">
+                Ihr Wohlbefinden steht an erster Stelle. Deshalb machen wir es Ihnen so einfach wie möglich.
               </p>
             </div>
           </div>
@@ -661,11 +594,11 @@ export default function Home() {
                 ★★★★★
               </div>
               <p className="font-semibold mb-2">Sarah</p>
-              <div className="quote-mark">"</div>
+              <div className="quote-mark">&ldquo;</div>
               <p className="text-sm text-gray-600 -mt-6">
                 &quot;As a skincare specialist, I&apos;ve always been cautious about the products I recommend. When I learned about the benefits of light therapy, I knew we had to create a mask that truly works. Being part of the team that developed this mask has been a rewarding journey, knowing we&apos;re helping people achieve healthier skin.&quot;
               </p>
-              <div className="quote-mark text-right">"</div>
+              <div className="quote-mark text-right">&rdquo;</div>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -673,26 +606,43 @@ export default function Home() {
                 ★★★★★
               </div>
               <p className="font-semibold mb-2">Alex</p>
-              <div className="quote-mark">"</div>
+              <div className="quote-mark">&ldquo;</div>
               <p className="text-sm text-gray-600 -mt-6">
                 &quot;I&apos;ve struggled with acne and uneven skin tone for years. When we started developing the Light Therapy Facial-X7 Mask, I was skeptical. But after using it myself, I saw incredible improvements. It&apos;s now my go-to skincare tool, and I&apos;m proud to share it with others.&quot;
               </p>
-              <div className="quote-mark text-right">"</div>
+              <div className="quote-mark text-right">&rdquo;</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="section-light py-12 px-4 md:px-8">
+      {/* Final CTA with Guarantee */}
+      <section className="py-16 px-4 md:px-8 bg-gradient-to-r from-[#E8F7F7] to-white">
         <div className="max-w-lg mx-auto text-center">
-          <a href="https://www.digistore24.com/product/558312?aff=exxd00" target="_blank" rel="noopener noreferrer" className="btn-teal text-lg">Buy Now</a>
+          <Image
+            src="https://ext.same-assets.com/778971269/714983124.png"
+            alt="180 Day Guarantee"
+            width={120}
+            height={120}
+            className="mx-auto mb-6"
+          />
+          <h2 className="text-2xl font-bold mb-4">Bereit für strahlende Haut?</h2>
+          <p className="text-gray-600 mb-6">
+            Testen Sie völlig risikofrei mit unserer 180-Tage Geld-zurück-Garantie!
+          </p>
+          <a href="https://www.digistore24.com/product/558312?aff=exxd00" target="_blank" rel="noopener noreferrer" className="btn-teal text-lg">
+            Jetzt Risikofrei Bestellen
+          </a>
+          <p className="text-sm text-[#0E99A0] font-semibold mt-3">🛡️ 180 Tage Geld-zurück-Garantie</p>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="py-8 px-4 md:px-8 border-t">
         <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-4">
+            <p className="text-sm text-[#0E99A0] font-semibold">🛡️ Alle Käufe sind durch unsere 180-Tage Geld-zurück-Garantie geschützt</p>
+          </div>
           <div className="flex flex-wrap justify-center gap-6 mb-6">
             <a href="#" className="text-sm text-gray-600 hover:text-[#0E99A0]">Return Policy</a>
             <a href="#" className="text-sm text-gray-600 hover:text-[#0E99A0]">Shipping Policy</a>
